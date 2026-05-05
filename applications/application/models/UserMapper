@@ -1,0 +1,13 @@
+<?php
+
+class UserMapper
+{
+    public function fetchAll(){
+        $liner = array();
+        $file = file(USES);
+
+        foreach($file as $key => $value){
+            $lines[$key]= str_getcsv($value,";");
+        }
+    }
+}

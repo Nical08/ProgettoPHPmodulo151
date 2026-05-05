@@ -1,0 +1,22 @@
+{
+    "name": "progetto/negozio-riparazioni",
+    "description": "Gestionale per negozio di riparazioni",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "illuminate/database": "^10.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "classmap": [
+            "application/models/",
+            "application/libs/"
+        ]
+    },
+    "scripts": {
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-html coverage"
+    }
+}
